@@ -1,0 +1,95 @@
+body{
+    /* background-color: aqua; */
+
+    background-image: url("2.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+#login{
+    margin-left: 270px;
+    margin-top: 30px;
+}
+#buttonlogin,#buttonregister{
+    margin-left: 120px;
+}
+#register{
+    margin-left: 270px;
+    margin-top: 30px;
+    /* padding: 70px;
+    background-color: darkgray; */
+}
+
+
+.form-group row{
+    padding: 50%;
+    margin: auto;
+}
+.header{
+    padding-top: 6px;
+    padding-bottom: 10px;
+    background-color: #27302F;
+    opacity: 0.9;
+}
+
+.navbar-brand{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.navbar-light .navbar-brand .nav-link{
+    color: #f4f4f4;
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    font-size: 2.2ex;
+    margin-right: 1em;
+}
+
+span{
+    color: #7b7c8a;
+}
+
+.collapse input{
+    margin-right: 1em;
+}
+.val_error{
+    columns: #ff1f1f;
+
+}
+
+#dailyreport{
+    padding: 20px;
+    margin:5px auto;
+    /* background-position: left; */
+    background-color: bisque;
+
+}
+#monthreport{
+    display: none;
+    padding: 20px;
+    margin: 5px auto;
+     /* background-position: left;  */
+    background-color: darkgray;
+
+}
+
+
+.userinfo{
+        margin: 30px auto;
+    padding: 50px;
+    background-color: rgb(226, 231, 241); 
+
+
+}
+.reports{
+    margin: 30px auto;
+}
+.zzzz{
+    margin: 30px auto;
+     
+}
+

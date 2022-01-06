@@ -1,0 +1,11 @@
+.adminTables{
+    margin: 20px auto;
+}
+body{
+    /* background-color: aqua; */
+
+    background-image: url("2.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}

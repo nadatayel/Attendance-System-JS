@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Admin </title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900"
+        rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="prjstyle.css" rel="stylesheet" />
+    <link href="pstyle.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="col-7 navbar-brand float-left">
+                <a class="nav-link" href="Home.html">Attendance</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" style="color: rgb(92, 65, 24);"></i>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="Home.html"> <i class="fa fa-home"></i>
+                            HOME</a>
+                    </li>
+                    <li class="nav-item active" id="profLi">
+                        <a class="nav-link text-light" href="profile.html"> <i class="fa fa-user-circle"></i>
+                            Profile</a>
+                    </li>
+                    <li class="nav-item" id="attedLi">
+                        <a class="nav-link text-light" href="attendance.html"> <i class="fa fa-book"></i>
+                            Attendance</a>
+                    </li>
+                    <li class="nav-item" id="adminLi">
+
+                        <a class="nav-link text-light" href="ADMI.html"><i class="fa fa-archive"></i> Admin Panel</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="adminTables">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1">All Employees</a></li>
+                        <li><a href="#tabs-2">Full Report</a></li>
+                        <li><a href="#tabs-3">Late Report</a></li>
+                        <li><a href="#tabs-4">Excuse Report</a></li>
+                        <li><a href="#tabs-5">Employee Brief</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <div>
+                            <table class="table table-bordered table-striped  table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Employee Name</th>
+                                        <th>role</th>
+                                        <th>Attendance</th>
+                                        <th>Late</th>
+                                        <th>Excuse</th>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody1">
+                                    <tr>
+                                        <td>Mohamed </td>
+                                        <td>Mohamed@gmail.com</td>
+                                        <td>4</td>
+                                        <td>2</td>
+                                        <td>1</td>
+
+                                    </tr>
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                    <div id="tabs-2">
+                        <table class="table table-bordered table-striped  table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Employee Name</th>
+                                    <th>role</th>
+                                    <th>attendance time</th>
+                                    <th>attendance</th>
+                                    <th> late </th>
+                                    <th> absence </th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody2">
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <div id="tabs-3">
+                        <table class="table table-bordered table-striped  table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Employee Name</th>
+                                    <th>role</th>
+                                    <th>Late</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody3">
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="tabs-4">
+                        <table class="table table-bordered table-striped  table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Employee Name</th>
+                                    <th>role</th>
+                                    <th>absence</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody4">
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <div id="tabs-5">
+                        <table class="table table-bordered table-striped  table-hover">
+                            <thead>
+                                <tr>
+                                    <th>First Name</th>
+
+                                    <th>Last Name</th>
+                                    <th>User Name </th>
+                                    <th>Email</th>
+                                    <th> Status </th>
+                                    <th>
+                                    </th>
+                                    <th></th>
+
+                                </tr>
+                            </thead>
+                            <tbody id="empBody">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/JQuery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="admin.js"></script>
+
+    <script>
+        $(function () {
+            $("#tabs").tabs();
+        });
+    </script>
+</body>
+
+</html>

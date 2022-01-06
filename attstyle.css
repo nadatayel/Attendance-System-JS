@@ -1,0 +1,26 @@
+#login{
+    margin-left: 100px;
+    margin-top: 30px ;
+}
+body{
+    /* background-color: aqua; */
+
+    background-image: url("2.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+
+}
+#buttonlogin{
+    margin-left: 660px;
+}
+.form-group row{
+    padding: 50%;
+    /* margin-left: px auto; */
+}
+label{
+    margin-left: 260px;
+
+}
+.ww{
+    margin: 30px auto;
+}

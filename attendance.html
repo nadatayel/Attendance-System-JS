@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>attendance</title>
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/font-awesome.css" rel="stylesheet" />
+  <link href="prjstyle.css" rel="stylesheet" />
+  <link rel="stylesheet" href="attstyle.css" />
+</head>
+
+<body>
+  <div class="header">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="col-7 navbar-brand float-left">
+        <a class="nav-link" href="Home.html">Attendance</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" style="color: rgb(92, 65, 24);"></i>
+      </button>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Home.html"> <i class="fa fa-home"></i>
+              HOME</a>
+          </li>
+          <li class="nav-item active" id="profLi">
+            <a class="nav-link text-light" href="profile.html"> <i class="fa fa-user-circle"></i>
+              Profile</a>
+          </li>
+          <li class="nav-item" id="attedLi">
+            <a class="nav-link text-light" href="attendance.html"> <i class="fa fa-book"></i>
+              Attendance</a>
+          </li>
+          <li class="nav-item" id="adminLi">
+
+            <a class="nav-link text-light" href="ADMI.html"><i class="fa fa-archive"></i> Admin Panel</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </div>
+  <div>
+    <form class="ww">
+      <div class="form-group row">
+        <label for="inputusername" class="col-sm-2 col-form-label">User Name</label>
+        <div class="col-sm-4" align="center">
+          <input type="text" class="form-control" placeholder="userName" id="txtAttendanceCode">
+        </div>
+      </div>
+
+      <div class="form-group row offset-5">
+        <input type="button" class="btn btn-info " value="ConfirmAttendance" id="btnConfirm">
+      </div>
+    </form>
+  </div>
+
+  <script src="js/JQuery-3.3.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="attendance.js"></script>
+</body>
+
+</html>

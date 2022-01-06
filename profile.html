@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>profile</title>
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="prjstyle.css" />
+</head>
+
+<body>
+
+
+  <div class="header">
+    <nav class="navbar navbar-expand-md navbar-light    navbar-expand  ">
+      <div class="col-7 navbar-brand float-left  ">
+        <a class="nav-link" href="Home.html">Attendence</a>
+      </div>
+
+      <div class="col-5 collapse navbar-collapse float-right">
+        <ul class="navbar-nav figure">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="Home.html"> <i class="fa fa-home"></i>
+              HOME</a>
+          </li>
+          <li class="nav-item active" id="profLi">
+            <a class="nav-link text-light" href="profile.html"> <i class="fa fa-user-circle"></i>
+              Profile</a>
+          </li>
+          <li class="nav-item" id="attedLi">
+            <a class="nav-link text-light" href="attendance.html"> <i class="fa fa-book"></i>
+              Attendance</a>
+          </li>
+          <li class="nav-item" id="adminLi">
+
+            <a class="nav-link text-light" href="ADMI.html"><i class="fa fa-archive"></i> Admin Panel</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </div>
+
+  <div class="container ">
+
+    <div class="row">
+      <div class="col-6 userinfo">
+        <p id="empData"></p>
+      </div>
+      <div class="col-6  reports">
+        <button class="btn btn-info " id="btndialyreport">Daily Report </button>
+        <button class="btn btn-info " id="btnmonthreport">Month Report</button>
+
+        <div class="col-6">
+
+          <div id="dailyreport"> </div>
+          <div id="monthreport">
+            <ul id="monthUl"> </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/JQuery-3.3.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="profile.js"> </script>
+
+
+  <script>
+    $(document).ready(function () {
+      $("#btndialyreport").click(function () {
+        $("#dailyreport").css("display", "block");
+        $("#monthreport").css("display", "none");
+      });
+
+      $("#btnmonthreport").click(function () {
+        $("#monthreport").css("display", "block");
+        $("#dailyreport").css("display", "none");
+      });
+    });
+  </script>
+
+
+
+</body>
+
+</html>
